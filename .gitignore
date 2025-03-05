@@ -16,6 +16,10 @@
 *.vsp
 *.psess
 
+#cmake middle files	
+
+CMakePresets.json
+
 # Gradle #
 ##########
 !gradle.properties
@@ -26,7 +30,8 @@
 .gradle/
 **/guild/
 coverage/
-
+out/
+MingW Makefiles/
 # NuGet #
 #########
 *.nupkg
@@ -138,6 +143,8 @@ pocomsg.h
 /out/build/x64-Debug
 .vs/
 vcpkg_installed/
+tempbuild/
+
 
 # Eclipse generated files #
 ###########################
