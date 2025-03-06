@@ -30,62 +30,50 @@
     },
     "configurations": [
         {
-            "name": "Mac",
-            "intelliSenseMode": "clang-x64",
-            "includePath": [
-                "${pocoIncludePath}",
-                "/usr/local/opt/openssl@3/include",
-                "/opt/homebrew/opt/openssl@3/include"
-            ],
-            "macFrameworkPath": [
-                "/System/Library/Frameworks"
-            ],
-            "defines": [],
-            "forcedInclude": [],
-            "compilerPath": "/usr/bin/clang",
-            "cStandard": "c11",
-            "cppStandard": "c++17",
-            "compileCommands": "",
-            "browse": {
-                "path": [
-                    "${workspaceFolder}"
-                ],
-                "limitSymbolsToIncludedHeaders": true,
-                "databaseFilename": ""
-            },
-            "configurationProvider": "ms-vscode.makefile-tools"
-        },
-        {
-            "name": "Linux",
-            "intelliSenseMode": "gcc-x64",
-            "includePath": [
-                "${pocoIncludePath}"
-            ],
-            "defines": [],
-            "forcedInclude": [],
-            "compilerPath": "/usr/bin/gcc",
-            "cStandard": "c11",
-            "cppStandard": "c++17",
-            "compileCommands": "",
-            "browse": {
-                "path": [
-                    "${workspaceFolder}"
-                ],
-                "limitSymbolsToIncludedHeaders": true,
-                "databaseFilename": ""
-            }
-        },
-        {
             "name": "Win32",
             "includePath": [
+                "c:/Users/sammiler/MyFile/QtStudy/VSCode/poco/CppUnit/include",
+                "c:/Users/sammiler/MyFile/QtStudy/VSCode/poco/Foundation/include",
+                "c:/Users/sammiler/MyFile/QtStudy/VSCode/poco/Encodings/include",
+                "c:/Users/sammiler/MyFile/QtStudy/VSCode/poco/XML/include",
+                "c:/Users/sammiler/MyFile/QtStudy/VSCode/poco/JSON/include",
+                "c:/Users/sammiler/MyFile/QtStudy/VSCode/poco/Util/include",
+                "c:/Users/sammiler/MyFile/QtStudy/VSCode/poco/Net/include",
+                "c:/Users/sammiler/MyFile/QtStudy/VSCode/poco/Crypto/include",
+                "c:/Users/sammiler/MyFile/QtStudy/VSCode/poco/NetSSL_OpenSSL/include",
+                "c:/Users/sammiler/MyFile/QtStudy/VSCode/poco/Data/include",
+                "c:/Users/sammiler/MyFile/QtStudy/VSCode/poco/Data/SQLite/include",
+                "c:/Users/sammiler/MyFile/QtStudy/VSCode/poco/Data/ODBC/include",
+                "c:/Users/sammiler/MyFile/QtStudy/VSCode/poco/Data/MySQL/include",
+                "c:/Users/sammiler/MyFile/QtStudy/VSCode/poco/Data/PostgreSQL/include",
+                "c:/Users/sammiler/MyFile/QtStudy/VSCode/poco/ActiveRecord/include",
+                "c:/Users/sammiler/MyFile/QtStudy/VSCode/poco/Zip/include",
+                "c:/Users/sammiler/MyFile/QtStudy/VSCode/poco/CppParser/include",
+                "c:/Users/sammiler/MyFile/QtStudy/VSCode/poco/JWT/include",
+                "c:/Users/sammiler/MyFile/QtStudy/VSCode/poco/Redis/include",
+                "c:/Users/sammiler/MyFile/QtStudy/VSCode/poco/MongoDB/include",
+                "c:/Users/sammiler/MyFile/QtStudy/VSCode/poco/ApacheConnector/include",
+                "c:/Users/sammiler/MyFile/QtStudy/VSCode/poco/Data/src",
+                "c:/Users/sammiler/MyFile/QtStudy/VSCode/poco/Data/DataTest/include",
+                "c:/Users/sammiler/MyFile/QtStudy/VSCode/poco/Trace/include",
                 "C:/vcpkg/installed/x64-windows/include",
-                "C:/vcpkg/installed/x64-windows/include/mysql",
-                "${workspaceFolder}/**"
+                "c:/Users/sammiler/MyFile/QtStudy/VSCode/poco/**"
             ],
-            "intelliSenseMode": "msvc-x64",
+            "compileCommands": [
+                "${workspaceFolder}/tempbuild/compile_commands.json"
+            ],
+            "intelliSenseMode": "windows-msvc-x64",
             "compilerPath": "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/VC/Tools/MSVC/14.43.34808/bin/Hostx64/x64/cl.exe",
             "cppStandard": "c++17",
-            "cStandard": "c11"
+            "cStandard": "c11",
+            "browse": {
+                "path": [
+                    "c:/Users/sammiler/MyFile/QtStudy/VSCode/poco/**",
+                    "C:/vcpkg/installed/x64-windows/include"
+                ],
+                "limitSymbolsToIncludedHeaders": true
+            },
+            "mergeConfigurations": false
         }
     ],
     "version": 4

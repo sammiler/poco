@@ -35,7 +35,7 @@
             "options": {
                 "cwd": "${workspaceFolder}",
             "env": {
-                    "PATH": "C:/Program Files/CMake/bin;C:/Tools;C:/Program Files/MySQL/MySQL Server 8.0/bin",
+                    "PATH": "C:/Program Files/CMake/bin;C:/Tools;",
                     "INCLUDE": "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/VC/Tools/MSVC/14.43.34808/include;C:/Program Files (x86)/Windows Kits/10/Include/10.0.22621.0/ucrt;C:/Program Files (x86)/Windows Kits/10/Include/10.0.22621.0/um;C:/Program Files (x86)/Windows Kits/10/Include/10.0.22621.0/shared;C:/vcpkg/installed/x64-windows/include",
                     "LIB": "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/VC/Tools/MSVC/14.43.34808/lib/x64;C:/Program Files (x86)/Windows Kits/10/Lib/10.0.22621.0/ucrt/x64;C:/Program Files (x86)/Windows Kits/10/Lib/10.0.22621.0/um/x64;C:/vcpkg/installed/x64-windows/debug/lib"
                 }
@@ -88,6 +88,36 @@
             "problemMatcher": [
                 "$msCompile"
             ]
+        },
+        {
+            "label": "add-env-to-cmakelists",
+            "type": "shell",
+            "command": "node",
+            "args": [
+                ".vscode/add_to_cmake.js"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            },
+            "problemMatcher": [],
+            "detail": "Add include_directories and link_directories to CMakeLists.txt"
+        },
+        {
+            "label": "generate-launch",
+            "type": "shell",
+            "command": "node",
+            "args": [
+                "${workspaceFolder}/.vscode/generate_launch.js"
+            ],
+            "group": {
+                "kind": "build"
+            },
+            "dependsOn": "cmake-build",
+            "problemMatcher": []
         }
     ]
 }

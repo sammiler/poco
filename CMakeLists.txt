@@ -1,10 +1,12 @@
 cmake_minimum_required(VERSION 3.15.0)
 
 project(Poco)
-
-# 确保使用 env.INCLUDE 和lib 中的路径
+#自动添加的配置
+#添加头文件路径和库文件路径
 include_directories($ENV{INCLUDE})
 link_directories($ENV{LIB})
+
+
 
 
 file(STRINGS "${PROJECT_SOURCE_DIR}/libversion" SHARED_LIBRARY_VERSION)
@@ -201,16 +203,16 @@ if(ENABLE_ACTIVERECORD AND NOT ENABLE_XML)
 endif()
 
 option(ENABLE_TESTS
-	"Set to OFF|ON (default is OFF) to control build of POCO tests" OFF)
+	"Set to OFF|ON (default is OFF) to control build of POCO tests" ON)
 
 option(ENABLE_TEST_DEPRECATED
-	"Set to OFF|ON (default is OFF) to enable build of tests for deprecated functionality" OFF)
+	"Set to OFF|ON (default is OFF) to enable build of tests for deprecated functionality" ON)
 
 option(ENABLE_COMPILER_WARNINGS
-	"Set to OFF|ON (default is OFF) to enable additional compiler warnings. Intended primarily for maintainers." OFF)
+	"Set to OFF|ON (default is OFF) to enable additional compiler warnings. Intended primarily for maintainers." ON)
 
 option(ENABLE_SAMPLES
-	"Set to OFF|ON (default is OFF) to control build of POCO samples" OFF)
+	"Set to OFF|ON (default is OFF) to control build of POCO samples" ON)
 
 option(ENABLE_FUZZING
 	"Set to OFF|ON (default is OFF) to control build of fuzzing targets for oss-fuzz (Clang compiler is required)" OFF)
