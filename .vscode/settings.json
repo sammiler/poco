@@ -101,7 +101,9 @@
 		"span": "cpp",
 		"semaphore": "cpp",
 		"__verbose_abort": "cpp",
-		"charconv": "cpp"
+		"charconv": "cpp",
+		"xstring": "cpp",
+		"filesystem": "cpp"
 	},
 	"files.exclude": {
         "**/.dep": true,

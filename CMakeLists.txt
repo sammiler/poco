@@ -2,6 +2,11 @@ cmake_minimum_required(VERSION 3.15.0)
 
 project(Poco)
 
+# 确保使用 env.INCLUDE 和lib 中的路径
+include_directories($ENV{INCLUDE})
+link_directories($ENV{LIB})
+
+
 file(STRINGS "${PROJECT_SOURCE_DIR}/libversion" SHARED_LIBRARY_VERSION)
 # Read the version information from the VERSION file
 file(STRINGS "${PROJECT_SOURCE_DIR}/VERSION" PACKAGE_VERSION)

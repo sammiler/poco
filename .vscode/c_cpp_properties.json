@@ -74,6 +74,18 @@
                 "limitSymbolsToIncludedHeaders": true,
                 "databaseFilename": ""
             }
+        },
+        {
+            "name": "Win32",
+            "includePath": [
+                "C:/vcpkg/installed/x64-windows/include",
+                "C:/vcpkg/installed/x64-windows/include/mysql",
+                "${workspaceFolder}/**"
+            ],
+            "intelliSenseMode": "msvc-x64",
+            "compilerPath": "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/VC/Tools/MSVC/14.43.34808/bin/Hostx64/x64/cl.exe",
+            "cppStandard": "c++17",
+            "cStandard": "c11"
         }
     ],
     "version": 4
