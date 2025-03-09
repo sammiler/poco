@@ -11,7 +11,7 @@ link_directories($ENV{LIB})
 `;
 
 // 指定 CMakeLists.txt 文件路径（假设在当前目录）
-const cmakeFilePath = path.join(__dirname, "..",'CMakeLists.txt');
+const cmakeFilePath = path.join(__dirname, "../../",'CMakeLists.txt');
 
 // 读取文件内容
 fs.readFile(cmakeFilePath, 'utf8', (err, data) => {

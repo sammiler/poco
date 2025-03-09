@@ -1,356 +1,2895 @@
 {
-  "version": "0.2.0",
-  "configurations": [
-  {
-    "name": "Linux GDB Foundation Test",
-    "variables": {
-      "libName": "Foundation"
-    },
-    "type": "cppdbg",
-    "request": "launch",
-    "program": "${workspaceFolder}/${libName}/testsuite/bin/${env:OSNAME}/${env:OSARCH}/testrunnerd",
-    "args": ["-all"],
-    "environment": [ { "name": "PATH", "value": "${env:PATH}:${workspaceFolder}/${libName}/testsuite/bin/${env:OSNAME}/${env:OSARCH}" } ],
-    "stopAtEntry": false,
-    "cwd": "${workspaceFolder}",
-    "externalConsole": false,
-    "MIMode": "gdb",
-    "setupCommands": [
-      {
-          "description": "Enable pretty-printing for gdb",
-          "text": "-enable-pretty-printing",
-          "ignoreFailures": true
-      }
-      ]
-  },
-  {
-    "name": "Linux GDB XML Test",
-    "type": "cppdbg",
-    "request": "launch",
-    "program": "${workspaceFolder}/XML/testsuite/bin/${env:OSNAME}/${env:OSARCH}/testrunnerd",
-    "args": ["-all"],
-    "stopAtEntry": false,
-    "cwd": "${workspaceFolder}",
-    "externalConsole": false,
-    "MIMode": "gdb",
-    "setupCommands": [
-      {
-          "description": "Enable pretty-printing for gdb",
-          "text": "-enable-pretty-printing",
-          "ignoreFailures": true
-      }
-      ]
-  },
-  {
-    "name": "Linux GDB JSON Test",
-    "type": "cppdbg",
-    "request": "launch",
-    "program": "${workspaceFolder}/JSON/testsuite/bin/${env:OSNAME}/${env:OSARCH}/testrunnerd",
-    "args": ["-all"],
-    "stopAtEntry": false,
-    "cwd": "${workspaceFolder}",
-    "externalConsole": false,
-    "MIMode": "gdb",
-    "setupCommands": [
-      {
-          "description": "Enable pretty-printing for gdb",
-          "text": "-enable-pretty-printing",
-          "ignoreFailures": true
-      }
-      ]
-  },
-  {
-    "name": "Linux GDB Util Test",
-    "type": "cppdbg",
-    "request": "launch",
-    "program": "${workspaceFolder}/Util/testsuite/bin/${env:OSNAME}/${env:OSARCH}/testrunnerd",
-    "args": ["-all"],
-    "stopAtEntry": false,
-    "cwd": "${workspaceFolder}",
-    "externalConsole": false,
-    "MIMode": "gdb",
-    "setupCommands": [
-      {
-          "description": "Enable pretty-printing for gdb",
-          "text": "-enable-pretty-printing",
-          "ignoreFailures": true
-      }
-      ]
-  },
-  {
-    "name": "Linux GDB Net Test",
-    "type": "cppdbg",
-    "request": "launch",
-    "program": "${workspaceFolder}/Net/testsuite/bin/${env:OSNAME}/${env:OSARCH}/testrunnerd",
-    "args": ["-all"],
-    "stopAtEntry": false,
-    "cwd": "${workspaceFolder}",
-    "externalConsole": false,
-    "MIMode": "gdb",
-    "setupCommands": [
-      {
-          "description": "Enable pretty-printing for gdb",
-          "text": "-enable-pretty-printing",
-          "ignoreFailures": true
-      }
-      ]
-  },
-  {
-    "name": "Linux GDB Crypto Test",
-    "type": "cppdbg",
-    "request": "launch",
-    "program": "${workspaceFolder}/Crypto/testsuite/bin/${env:OSNAME}/${env:OSARCH}/testrunnerd",
-    "args": ["-all"],
-    "stopAtEntry": false,
-    "cwd": "${workspaceFolder}",
-    "externalConsole": false,
-    "MIMode": "gdb",
-    "setupCommands": [
-      {
-          "description": "Enable pretty-printing for gdb",
-          "text": "-enable-pretty-printing",
-          "ignoreFailures": true
-      }
-      ]
-  },
-  {
-    "name": "Linux GDB Net SSL Test",
-    "type": "cppdbg",
-    "request": "launch",
-    "program": "${workspaceFolder}/NetSSL_OpenSSL/testsuite/bin/${env:OSNAME}/${env:OSARCH}/testrunnerd",
-    "args": ["-all"],
-    "stopAtEntry": false,
-    "cwd": "${workspaceFolder}",
-    "externalConsole": false,
-    "MIMode": "gdb",
-    "setupCommands": [
-      {
-          "description": "Enable pretty-printing for gdb",
-          "text": "-enable-pretty-printing",
-          "ignoreFailures": true
-      }
-      ]
-  },
-  {
-    "name": "Linux GDB Data Test",
-    "type": "cppdbg",
-    "request": "launch",
-    "program": "${workspaceFolder}/Data/testsuite/bin/${env:OSNAME}/${env:OSARCH}/testrunnerd",
-    "args": ["-all"],
-    "stopAtEntry": false,
-    "cwd": "${workspaceFolder}",
-    "externalConsole": false,
-    "MIMode": "gdb",
-    "setupCommands": [
-      {
-          "description": "Enable pretty-printing for gdb",
-          "text": "-enable-pretty-printing",
-          "ignoreFailures": true
-      }
-      ]
-  },
-  {
-    "name": "Linux GDB Data/SQLite Test",
-    "type": "cppdbg",
-    "request": "launch",
-    "program": "${workspaceFolder}/Data/SQLite/testsuite/bin/${env:OSNAME}/${env:OSARCH}/testrunnerd",
-    "args": ["-all"],
-    "stopAtEntry": false,
-    "cwd": "${workspaceFolder}",
-    "externalConsole": false,
-    "MIMode": "gdb",
-    "setupCommands": [
-      {
-          "description": "Enable pretty-printing for gdb",
-          "text": "-enable-pretty-printing",
-          "ignoreFailures": true
-      }
-      ]
-  },
-  {
-    "name": "Linux GDB Data/ODBC Test",
-    "type": "cppdbg",
-    "request": "launch",
-    "program": "${workspaceFolder}/Data/ODBC/testsuite/bin/${env:OSNAME}/${env:OSARCH}/testrunnerd",
-    "args": ["-all"],
-    "stopAtEntry": false,
-    "cwd": "${workspaceFolder}",
-    "externalConsole": false,
-    "MIMode": "gdb",
-    "setupCommands": [
-      {
-          "description": "Enable pretty-printing for gdb",
-          "text": "-enable-pretty-printing",
-          "ignoreFailures": true
-      }
-      ]
-  },
-  {
-    "name": "Linux GDB Data/MySQL Test",
-    "type": "cppdbg",
-    "request": "launch",
-    "program": "${workspaceFolder}/Data/MySQL/testsuite/bin/${env:OSNAME}/${env:OSARCH}/testrunnerd",
-    "args": ["-all"],
-    "stopAtEntry": false,
-    "cwd": "${workspaceFolder}",
-    "externalConsole": false,
-    "MIMode": "gdb",
-    "setupCommands": [
-      {
-          "description": "Enable pretty-printing for gdb",
-          "text": "-enable-pretty-printing",
-          "ignoreFailures": true
-      }
-      ]
-  },
-  {
-    "name": "Linux GDB Data/PostgreSQL Test",
-    "type": "cppdbg",
-    "request": "launch",
-    "program": "${workspaceFolder}/Data/PostgreSQL/testsuite/bin/${env:OSNAME}/${env:OSARCH}/testrunnerd",
-    "args": ["-all"],
-    "stopAtEntry": false,
-    "cwd": "${workspaceFolder}",
-    "externalConsole": false,
-    "MIMode": "gdb",
-    "setupCommands": [
-      {
-          "description": "Enable pretty-printing for gdb",
-          "text": "-enable-pretty-printing",
-          "ignoreFailures": true
-      }
-      ]
-  },
-  {
-    "name": "Linux GDB MongoDB Test",
-    "type": "cppdbg",
-    "request": "launch",
-    "program": "${workspaceFolder}/MongoDB/testsuite/bin/${env:OSNAME}/${env:OSARCH}/testrunnerd",
-    "args": ["-all"],
-    "stopAtEntry": false,
-    "cwd": "${workspaceFolder}",
-    "externalConsole": false,
-    "MIMode": "gdb",
-    "setupCommands": [
-      {
-          "description": "Enable pretty-printing for gdb",
-          "text": "-enable-pretty-printing",
-          "ignoreFailures": true
-      }
-      ]
-  },
-  {
-    "name": "Linux GDB Redis Test",
-    "type": "cppdbg",
-    "request": "launch",
-    "program": "${workspaceFolder}/Redis/testsuite/bin/${env:OSNAME}/${env:OSARCH}/testrunnerd",
-    "args": ["-all"],
-    "stopAtEntry": false,
-    "cwd": "${workspaceFolder}",
-    "externalConsole": false,
-    "MIMode": "gdb",
-    "setupCommands": [
-      {
-          "description": "Enable pretty-printing for gdb",
-          "text": "-enable-pretty-printing",
-          "ignoreFailures": true
-      }
-      ]
-  },
-  /********************************************************************************************************************************
-   *  Following configurations are multiplatform; lldb and CodeLLDB required:                                                     *
-   *  https://marketplace.visualstudio.com/items?itemName=vadimcn.vscode-lldb                                                     *
-   *                                                                                                                              *
-   *  OSX SIP notes:                                                                                                              *
-   *    1. DYLD_LIBRARY_PATH is not passed to VSCode (even when launched from terminal having it properly set)                    *
-   *    2. the consequence is that the POCO libraries can only be found if they (or links to them) are in the system library path *
-   *    3. binaries or symbolic links can not be placed in `/usr/lib`, only in `/usr/local/lib`                                   *
-   *    4. SIP can be disabled (not recommended)                                                                                  *
-   *      https://developer.apple.com/documentation/security/disabling_and_enabling_system_integrity_protection                   *
-   ********************************************************************************************************************************/
-  {
-    "name": "CodeLLDB Foundation Test",
-    "type": "lldb",
-    "request": "launch",
-    "program": "${workspaceFolder}/Foundation/testsuite/bin/${env:OSNAME}/${env:OSARCH}/testrunnerd",
-    "args": ["-all"]
-  },
-  {
-    "name": "CodeLLDB Net Test",
-    "type": "lldb",
-    "request": "launch",
-    "program": "${workspaceFolder}/Net/testsuite/bin/${env:OSNAME}/${env:OSARCH}/testrunnerd",
-    "args": ["-all"]
-  },
-  {
-    "name": "CodeLLDB JSON Test",
-    "type": "lldb",
-    "request": "launch",
-    "program": "${workspaceFolder}/JSON/testsuite/bin/${env:OSNAME}/${env:OSARCH}/testrunnerd",
-    "args": ["-all"]
-  },
-  {
-    "name": "CodeLLDB XML Test",
-    "type": "lldb",
-    "request": "launch",
-    "program": "${workspaceFolder}/XML/testsuite/bin/${env:OSNAME}/${env:OSARCH}/testrunnerd",
-    "args": ["-all"]
-  },
-  {
-    "name": "CodeLLDB Util Test",
-    "type": "lldb",
-    "request": "launch",
-    "program": "${workspaceFolder}/Util/testsuite/bin/${env:OSNAME}/${env:OSARCH}/testrunnerd",
-    "args": ["-all"]
-  },
-  {
-    "name": "CodeLLDB Data Test",
-    "type": "lldb",
-    "request": "launch",
-    "program": "${workspaceFolder}/Data/testsuite/bin/${env:OSNAME}/${env:OSARCH}/testrunnerd",
-    "args": ["-all"]
-  },
-  {
-    "name": "CodeLLDB Data/SQLite Test",
-    "type": "lldb",
-    "request": "launch",
-    "program": "${workspaceFolder}/Data/SQLite/testsuite/bin/${env:OSNAME}/${env:OSARCH}/testrunnerd",
-    "args": ["-all"]
-  },
-  {
-    "name": "CodeLLDB Data/ODBC Test",
-    "type": "lldb",
-    "request": "launch",
-    "program": "${workspaceFolder}/Data/ODBC/testsuite/bin/${env:OSNAME}/${env:OSARCH}/testrunnerd",
-    "args": ["-all"]
-  },
-  {
-    "name": "CodeLLDB Data/MySQL Test",
-    "type": "lldb",
-    "request": "launch",
-    "program": "${workspaceFolder}/Data/MySQL/testsuite/bin/${env:OSNAME}/${env:OSARCH}/testrunnerd",
-    "args": ["-all"]
-  },
-  {
-    "name": "CodeLLDB Data/PostgreSQL Test",
-    "type": "lldb",
-    "request": "launch",
-    "program": "${workspaceFolder}/Data/PostgreSQL/testsuite/bin/${env:OSNAME}/${env:OSARCH}/testrunnerd",
-    "args": ["-all"]
-  },
-  {
-    "name": "CodeLLDB MongoDB Test",
-    "type": "lldb",
-    "request": "launch",
-    "program": "${workspaceFolder}/MongoDB/testsuite/bin/${env:OSNAME}/${env:OSARCH}/testrunnerd",
-    "args": ["-all"]
-  },
-  {
-    "name": "CodeLLDB Redis Test",
-    "type": "lldb",
-    "request": "launch",
-    "program": "${workspaceFolder}/Redis/testsuite/bin/${env:OSNAME}/${env:OSARCH}/testrunnerd",
-    "args": ["-all"]
-  }
-  ]
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug ActiveMethod",
+            "program": "${workspaceFolder}/tempbuild/bin/ActiveMethod.exe",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "args": [],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}/tempbuild/bin",
+            "environment": [
+                {
+                    "name": "PATH",
+                    "value": "${env:PATH};C:/Program Files/MySQL/MySQL Server 8.0/lib;"
+                }
+            ],
+            "console": "externalTerminal",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set charset to UTF-8",
+                    "text": "set charset UTF-8",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "将反汇编风格设置为 Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "cmake-build"
+        },
+        {
+            "name": "Debug ActiveRecord-testrunner",
+            "program": "${workspaceFolder}/tempbuild/bin/ActiveRecord-testrunner.exe",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "args": [],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}/tempbuild/bin",
+            "environment": [
+                {
+                    "name": "PATH",
+                    "value": "${env:PATH};C:/Program Files/MySQL/MySQL Server 8.0/lib;"
+                }
+            ],
+            "console": "externalTerminal",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set charset to UTF-8",
+                    "text": "set charset UTF-8",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "将反汇编风格设置为 Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "cmake-build"
+        },
+        {
+            "name": "Debug Activity",
+            "program": "${workspaceFolder}/tempbuild/bin/Activity.exe",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "args": [],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}/tempbuild/bin",
+            "environment": [
+                {
+                    "name": "PATH",
+                    "value": "${env:PATH};C:/Program Files/MySQL/MySQL Server 8.0/lib;"
+                }
+            ],
+            "console": "externalTerminal",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set charset to UTF-8",
+                    "text": "set charset UTF-8",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "将反汇编风格设置为 Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "cmake-build"
+        },
+        {
+            "name": "Debug base64decode",
+            "program": "${workspaceFolder}/tempbuild/bin/base64decode.exe",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "args": [],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}/tempbuild/bin",
+            "environment": [
+                {
+                    "name": "PATH",
+                    "value": "${env:PATH};C:/Program Files/MySQL/MySQL Server 8.0/lib;"
+                }
+            ],
+            "console": "externalTerminal",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set charset to UTF-8",
+                    "text": "set charset UTF-8",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "将反汇编风格设置为 Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "cmake-build"
+        },
+        {
+            "name": "Debug base64encode",
+            "program": "${workspaceFolder}/tempbuild/bin/base64encode.exe",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "args": [],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}/tempbuild/bin",
+            "environment": [
+                {
+                    "name": "PATH",
+                    "value": "${env:PATH};C:/Program Files/MySQL/MySQL Server 8.0/lib;"
+                }
+            ],
+            "console": "externalTerminal",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set charset to UTF-8",
+                    "text": "set charset UTF-8",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "将反汇编风格设置为 Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "cmake-build"
+        },
+        {
+            "name": "Debug Benchmark",
+            "program": "${workspaceFolder}/tempbuild/bin/Benchmark.exe",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "args": [],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}/tempbuild/bin",
+            "environment": [
+                {
+                    "name": "PATH",
+                    "value": "${env:PATH};C:/Program Files/MySQL/MySQL Server 8.0/lib;"
+                }
+            ],
+            "console": "externalTerminal",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set charset to UTF-8",
+                    "text": "set charset UTF-8",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "将反汇编风格设置为 Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "cmake-build"
+        },
+        {
+            "name": "Debug BinaryReaderWriter",
+            "program": "${workspaceFolder}/tempbuild/bin/BinaryReaderWriter.exe",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "args": [],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}/tempbuild/bin",
+            "environment": [
+                {
+                    "name": "PATH",
+                    "value": "${env:PATH};C:/Program Files/MySQL/MySQL Server 8.0/lib;"
+                }
+            ],
+            "console": "externalTerminal",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set charset to UTF-8",
+                    "text": "set charset UTF-8",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "将反汇编风格设置为 Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "cmake-build"
+        },
+        {
+            "name": "Debug Binding",
+            "program": "${workspaceFolder}/tempbuild/bin/Binding.exe",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "args": [],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}/tempbuild/bin",
+            "environment": [
+                {
+                    "name": "PATH",
+                    "value": "${env:PATH};C:/Program Files/MySQL/MySQL Server 8.0/lib;"
+                }
+            ],
+            "console": "externalTerminal",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set charset to UTF-8",
+                    "text": "set charset UTF-8",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "将反汇编风格设置为 Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "cmake-build"
+        },
+        {
+            "name": "Debug cpspc",
+            "program": "${workspaceFolder}/tempbuild/bin/cpspc.exe",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "args": [],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}/tempbuild/bin",
+            "environment": [
+                {
+                    "name": "PATH",
+                    "value": "${env:PATH};C:/Program Files/MySQL/MySQL Server 8.0/lib;"
+                }
+            ],
+            "console": "externalTerminal",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set charset to UTF-8",
+                    "text": "set charset UTF-8",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "将反汇编风格设置为 Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "cmake-build"
+        },
+        {
+            "name": "Debug Crypto-testrunner",
+            "program": "${workspaceFolder}/tempbuild/bin/Crypto-testrunner.exe",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "args": [],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}/tempbuild/bin",
+            "environment": [
+                {
+                    "name": "PATH",
+                    "value": "${env:PATH};C:/Program Files/MySQL/MySQL Server 8.0/lib;"
+                }
+            ],
+            "console": "externalTerminal",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set charset to UTF-8",
+                    "text": "set charset UTF-8",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "将反汇编风格设置为 Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "cmake-build"
+        },
+        {
+            "name": "Debug Data-testrunner",
+            "program": "${workspaceFolder}/tempbuild/bin/Data-testrunner.exe",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "args": [],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}/tempbuild/bin",
+            "environment": [
+                {
+                    "name": "PATH",
+                    "value": "${env:PATH};C:/Program Files/MySQL/MySQL Server 8.0/lib;"
+                }
+            ],
+            "console": "externalTerminal",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set charset to UTF-8",
+                    "text": "set charset UTF-8",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "将反汇编风格设置为 Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "cmake-build"
+        },
+        {
+            "name": "Debug DataMySQL-testrunner",
+            "program": "${workspaceFolder}/tempbuild/bin/DataMySQL-testrunner.exe",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "args": [],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}/tempbuild/bin",
+            "environment": [
+                {
+                    "name": "PATH",
+                    "value": "${env:PATH};C:/Program Files/MySQL/MySQL Server 8.0/lib;"
+                }
+            ],
+            "console": "externalTerminal",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set charset to UTF-8",
+                    "text": "set charset UTF-8",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "将反汇编风格设置为 Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "cmake-build"
+        },
+        {
+            "name": "Debug DataODBC-testrunner",
+            "program": "${workspaceFolder}/tempbuild/bin/DataODBC-testrunner.exe",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "args": [],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}/tempbuild/bin",
+            "environment": [
+                {
+                    "name": "PATH",
+                    "value": "${env:PATH};C:/Program Files/MySQL/MySQL Server 8.0/lib;"
+                }
+            ],
+            "console": "externalTerminal",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set charset to UTF-8",
+                    "text": "set charset UTF-8",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "将反汇编风格设置为 Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "cmake-build"
+        },
+        {
+            "name": "Debug DataPostgreSQL-testrunner",
+            "program": "${workspaceFolder}/tempbuild/bin/DataPostgreSQL-testrunner.exe",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "args": [],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}/tempbuild/bin",
+            "environment": [
+                {
+                    "name": "PATH",
+                    "value": "${env:PATH};C:/Program Files/MySQL/MySQL Server 8.0/lib;"
+                }
+            ],
+            "console": "externalTerminal",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set charset to UTF-8",
+                    "text": "set charset UTF-8",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "将反汇编风格设置为 Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "cmake-build"
+        },
+        {
+            "name": "Debug DataSQLite-testrunner",
+            "program": "${workspaceFolder}/tempbuild/bin/DataSQLite-testrunner.exe",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "args": [],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}/tempbuild/bin",
+            "environment": [
+                {
+                    "name": "PATH",
+                    "value": "${env:PATH};C:/Program Files/MySQL/MySQL Server 8.0/lib;"
+                }
+            ],
+            "console": "externalTerminal",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set charset to UTF-8",
+                    "text": "set charset UTF-8",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "将反汇编风格设置为 Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "cmake-build"
+        },
+        {
+            "name": "Debug DateTime",
+            "program": "${workspaceFolder}/tempbuild/bin/DateTime.exe",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "args": [],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}/tempbuild/bin",
+            "environment": [
+                {
+                    "name": "PATH",
+                    "value": "${env:PATH};C:/Program Files/MySQL/MySQL Server 8.0/lib;"
+                }
+            ],
+            "console": "externalTerminal",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set charset to UTF-8",
+                    "text": "set charset UTF-8",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "将反汇编风格设置为 Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "cmake-build"
+        },
+        {
+            "name": "Debug DBLogger",
+            "program": "${workspaceFolder}/tempbuild/bin/DBLogger.exe",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "args": [],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}/tempbuild/bin",
+            "environment": [
+                {
+                    "name": "PATH",
+                    "value": "${env:PATH};C:/Program Files/MySQL/MySQL Server 8.0/lib;"
+                }
+            ],
+            "console": "externalTerminal",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set charset to UTF-8",
+                    "text": "set charset UTF-8",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "将反汇编风格设置为 Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "cmake-build"
+        },
+        {
+            "name": "Debug deflate",
+            "program": "${workspaceFolder}/tempbuild/bin/deflate.exe",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "args": [],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}/tempbuild/bin",
+            "environment": [
+                {
+                    "name": "PATH",
+                    "value": "${env:PATH};C:/Program Files/MySQL/MySQL Server 8.0/lib;"
+                }
+            ],
+            "console": "externalTerminal",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set charset to UTF-8",
+                    "text": "set charset UTF-8",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "将反汇编风格设置为 Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "cmake-build"
+        },
+        {
+            "name": "Debug dict",
+            "program": "${workspaceFolder}/tempbuild/bin/dict.exe",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "args": [],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}/tempbuild/bin",
+            "environment": [
+                {
+                    "name": "PATH",
+                    "value": "${env:PATH};C:/Program Files/MySQL/MySQL Server 8.0/lib;"
+                }
+            ],
+            "console": "externalTerminal",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set charset to UTF-8",
+                    "text": "set charset UTF-8",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "将反汇编风格设置为 Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "cmake-build"
+        },
+        {
+            "name": "Debug dir",
+            "program": "${workspaceFolder}/tempbuild/bin/dir.exe",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "args": [],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}/tempbuild/bin",
+            "environment": [
+                {
+                    "name": "PATH",
+                    "value": "${env:PATH};C:/Program Files/MySQL/MySQL Server 8.0/lib;"
+                }
+            ],
+            "console": "externalTerminal",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set charset to UTF-8",
+                    "text": "set charset UTF-8",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "将反汇编风格设置为 Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "cmake-build"
+        },
+        {
+            "name": "Debug DOMParser",
+            "program": "${workspaceFolder}/tempbuild/bin/DOMParser.exe",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "args": [],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}/tempbuild/bin",
+            "environment": [
+                {
+                    "name": "PATH",
+                    "value": "${env:PATH};C:/Program Files/MySQL/MySQL Server 8.0/lib;"
+                }
+            ],
+            "console": "externalTerminal",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set charset to UTF-8",
+                    "text": "set charset UTF-8",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "将反汇编风格设置为 Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "cmake-build"
+        },
+        {
+            "name": "Debug DOMWriter",
+            "program": "${workspaceFolder}/tempbuild/bin/DOMWriter.exe",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "args": [],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}/tempbuild/bin",
+            "environment": [
+                {
+                    "name": "PATH",
+                    "value": "${env:PATH};C:/Program Files/MySQL/MySQL Server 8.0/lib;"
+                }
+            ],
+            "console": "externalTerminal",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set charset to UTF-8",
+                    "text": "set charset UTF-8",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "将反汇编风格设置为 Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "cmake-build"
+        },
+        {
+            "name": "Debug download-ssl",
+            "program": "${workspaceFolder}/tempbuild/bin/download-ssl.exe",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "args": [],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}/tempbuild/bin",
+            "environment": [
+                {
+                    "name": "PATH",
+                    "value": "${env:PATH};C:/Program Files/MySQL/MySQL Server 8.0/lib;"
+                }
+            ],
+            "console": "externalTerminal",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set charset to UTF-8",
+                    "text": "set charset UTF-8",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "将反汇编风格设置为 Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "cmake-build"
+        },
+        {
+            "name": "Debug download",
+            "program": "${workspaceFolder}/tempbuild/bin/download.exe",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "args": [],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}/tempbuild/bin",
+            "environment": [
+                {
+                    "name": "PATH",
+                    "value": "${env:PATH};C:/Program Files/MySQL/MySQL Server 8.0/lib;"
+                }
+            ],
+            "console": "externalTerminal",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set charset to UTF-8",
+                    "text": "set charset UTF-8",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "将反汇编风格设置为 Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "cmake-build"
+        },
+        {
+            "name": "Debug EchoServer",
+            "program": "${workspaceFolder}/tempbuild/bin/EchoServer.exe",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "args": [],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}/tempbuild/bin",
+            "environment": [
+                {
+                    "name": "PATH",
+                    "value": "${env:PATH};C:/Program Files/MySQL/MySQL Server 8.0/lib;"
+                }
+            ],
+            "console": "externalTerminal",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set charset to UTF-8",
+                    "text": "set charset UTF-8",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "将反汇编风格设置为 Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "cmake-build"
+        },
+        {
+            "name": "Debug Encodings-testrunner",
+            "program": "${workspaceFolder}/tempbuild/bin/Encodings-testrunner.exe",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "args": [],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}/tempbuild/bin",
+            "environment": [
+                {
+                    "name": "PATH",
+                    "value": "${env:PATH};C:/Program Files/MySQL/MySQL Server 8.0/lib;"
+                }
+            ],
+            "console": "externalTerminal",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set charset to UTF-8",
+                    "text": "set charset UTF-8",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "将反汇编风格设置为 Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "cmake-build"
+        },
+        {
+            "name": "Debug f2cpsp",
+            "program": "${workspaceFolder}/tempbuild/bin/f2cpsp.exe",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "args": [],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}/tempbuild/bin",
+            "environment": [
+                {
+                    "name": "PATH",
+                    "value": "${env:PATH};C:/Program Files/MySQL/MySQL Server 8.0/lib;"
+                }
+            ],
+            "console": "externalTerminal",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set charset to UTF-8",
+                    "text": "set charset UTF-8",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "将反汇编风格设置为 Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "cmake-build"
+        },
+        {
+            "name": "Debug Foundation-testrunner",
+            "program": "${workspaceFolder}/tempbuild/bin/Foundation-testrunner.exe",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "args": [],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}/tempbuild/bin",
+            "environment": [
+                {
+                    "name": "PATH",
+                    "value": "${env:PATH};C:/Program Files/MySQL/MySQL Server 8.0/lib;"
+                }
+            ],
+            "console": "externalTerminal",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set charset to UTF-8",
+                    "text": "set charset UTF-8",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "将反汇编风格设置为 Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "cmake-build"
+        },
+        {
+            "name": "Debug genrsakey",
+            "program": "${workspaceFolder}/tempbuild/bin/genrsakey.exe",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "args": [],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}/tempbuild/bin",
+            "environment": [
+                {
+                    "name": "PATH",
+                    "value": "${env:PATH};C:/Program Files/MySQL/MySQL Server 8.0/lib;"
+                }
+            ],
+            "console": "externalTerminal",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set charset to UTF-8",
+                    "text": "set charset UTF-8",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "将反汇编风格设置为 Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "cmake-build"
+        },
+        {
+            "name": "Debug grep",
+            "program": "${workspaceFolder}/tempbuild/bin/grep.exe",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "args": [],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}/tempbuild/bin",
+            "environment": [
+                {
+                    "name": "PATH",
+                    "value": "${env:PATH};C:/Program Files/MySQL/MySQL Server 8.0/lib;"
+                }
+            ],
+            "console": "externalTerminal",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set charset to UTF-8",
+                    "text": "set charset UTF-8",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "将反汇编风格设置为 Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "cmake-build"
+        },
+        {
+            "name": "Debug hmacmd5",
+            "program": "${workspaceFolder}/tempbuild/bin/hmacmd5.exe",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "args": [],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}/tempbuild/bin",
+            "environment": [
+                {
+                    "name": "PATH",
+                    "value": "${env:PATH};C:/Program Files/MySQL/MySQL Server 8.0/lib;"
+                }
+            ],
+            "console": "externalTerminal",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set charset to UTF-8",
+                    "text": "set charset UTF-8",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "将反汇编风格设置为 Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "cmake-build"
+        },
+        {
+            "name": "Debug HTTPFormServer",
+            "program": "${workspaceFolder}/tempbuild/bin/HTTPFormServer.exe",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "args": [],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}/tempbuild/bin",
+            "environment": [
+                {
+                    "name": "PATH",
+                    "value": "${env:PATH};C:/Program Files/MySQL/MySQL Server 8.0/lib;"
+                }
+            ],
+            "console": "externalTerminal",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set charset to UTF-8",
+                    "text": "set charset UTF-8",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "将反汇编风格设置为 Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "cmake-build"
+        },
+        {
+            "name": "Debug httpget",
+            "program": "${workspaceFolder}/tempbuild/bin/httpget.exe",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "args": [],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}/tempbuild/bin",
+            "environment": [
+                {
+                    "name": "PATH",
+                    "value": "${env:PATH};C:/Program Files/MySQL/MySQL Server 8.0/lib;"
+                }
+            ],
+            "console": "externalTerminal",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set charset to UTF-8",
+                    "text": "set charset UTF-8",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "将反汇编风格设置为 Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "cmake-build"
+        },
+        {
+            "name": "Debug HTTPLoadTest",
+            "program": "${workspaceFolder}/tempbuild/bin/HTTPLoadTest.exe",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "args": [],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}/tempbuild/bin",
+            "environment": [
+                {
+                    "name": "PATH",
+                    "value": "${env:PATH};C:/Program Files/MySQL/MySQL Server 8.0/lib;"
+                }
+            ],
+            "console": "externalTerminal",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set charset to UTF-8",
+                    "text": "set charset UTF-8",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "将反汇编风格设置为 Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "cmake-build"
+        },
+        {
+            "name": "Debug HTTPSTimeServer",
+            "program": "${workspaceFolder}/tempbuild/bin/HTTPSTimeServer.exe",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "args": [],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}/tempbuild/bin",
+            "environment": [
+                {
+                    "name": "PATH",
+                    "value": "${env:PATH};C:/Program Files/MySQL/MySQL Server 8.0/lib;"
+                }
+            ],
+            "console": "externalTerminal",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set charset to UTF-8",
+                    "text": "set charset UTF-8",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "将反汇编风格设置为 Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "cmake-build"
+        },
+        {
+            "name": "Debug HTTPTimeServer",
+            "program": "${workspaceFolder}/tempbuild/bin/HTTPTimeServer.exe",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "args": [],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}/tempbuild/bin",
+            "environment": [
+                {
+                    "name": "PATH",
+                    "value": "${env:PATH};C:/Program Files/MySQL/MySQL Server 8.0/lib;"
+                }
+            ],
+            "console": "externalTerminal",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set charset to UTF-8",
+                    "text": "set charset UTF-8",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "将反汇编风格设置为 Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "cmake-build"
+        },
+        {
+            "name": "Debug ifconfig",
+            "program": "${workspaceFolder}/tempbuild/bin/ifconfig.exe",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "args": [],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}/tempbuild/bin",
+            "environment": [
+                {
+                    "name": "PATH",
+                    "value": "${env:PATH};C:/Program Files/MySQL/MySQL Server 8.0/lib;"
+                }
+            ],
+            "console": "externalTerminal",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set charset to UTF-8",
+                    "text": "set charset UTF-8",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "将反汇编风格设置为 Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "cmake-build"
+        },
+        {
+            "name": "Debug inflate",
+            "program": "${workspaceFolder}/tempbuild/bin/inflate.exe",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "args": [],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}/tempbuild/bin",
+            "environment": [
+                {
+                    "name": "PATH",
+                    "value": "${env:PATH};C:/Program Files/MySQL/MySQL Server 8.0/lib;"
+                }
+            ],
+            "console": "externalTerminal",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set charset to UTF-8",
+                    "text": "set charset UTF-8",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "将反汇编风格设置为 Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "cmake-build"
+        },
+        {
+            "name": "Debug JSON-testrunner",
+            "program": "${workspaceFolder}/tempbuild/bin/JSON-testrunner.exe",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "args": [],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}/tempbuild/bin",
+            "environment": [
+                {
+                    "name": "PATH",
+                    "value": "${env:PATH};C:/Program Files/MySQL/MySQL Server 8.0/lib;"
+                }
+            ],
+            "console": "externalTerminal",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set charset to UTF-8",
+                    "text": "set charset UTF-8",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "将反汇编风格设置为 Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "cmake-build"
+        },
+        {
+            "name": "Debug JWT-testrunner",
+            "program": "${workspaceFolder}/tempbuild/bin/JWT-testrunner.exe",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "args": [],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}/tempbuild/bin",
+            "environment": [
+                {
+                    "name": "PATH",
+                    "value": "${env:PATH};C:/Program Files/MySQL/MySQL Server 8.0/lib;"
+                }
+            ],
+            "console": "externalTerminal",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set charset to UTF-8",
+                    "text": "set charset UTF-8",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "将反汇编风格设置为 Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "cmake-build"
+        },
+        {
+            "name": "Debug Logger",
+            "program": "${workspaceFolder}/tempbuild/bin/Logger.exe",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "args": [],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}/tempbuild/bin",
+            "environment": [
+                {
+                    "name": "PATH",
+                    "value": "${env:PATH};C:/Program Files/MySQL/MySQL Server 8.0/lib;"
+                }
+            ],
+            "console": "externalTerminal",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set charset to UTF-8",
+                    "text": "set charset UTF-8",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "将反汇编风格设置为 Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "cmake-build"
+        },
+        {
+            "name": "Debug LogRotation",
+            "program": "${workspaceFolder}/tempbuild/bin/LogRotation.exe",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "args": [],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}/tempbuild/bin",
+            "environment": [
+                {
+                    "name": "PATH",
+                    "value": "${env:PATH};C:/Program Files/MySQL/MySQL Server 8.0/lib;"
+                }
+            ],
+            "console": "externalTerminal",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set charset to UTF-8",
+                    "text": "set charset UTF-8",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "将反汇编风格设置为 Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "cmake-build"
+        },
+        {
+            "name": "Debug Mail-ssl",
+            "program": "${workspaceFolder}/tempbuild/bin/Mail-ssl.exe",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "args": [],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}/tempbuild/bin",
+            "environment": [
+                {
+                    "name": "PATH",
+                    "value": "${env:PATH};C:/Program Files/MySQL/MySQL Server 8.0/lib;"
+                }
+            ],
+            "console": "externalTerminal",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set charset to UTF-8",
+                    "text": "set charset UTF-8",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "将反汇编风格设置为 Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "cmake-build"
+        },
+        {
+            "name": "Debug Mail",
+            "program": "${workspaceFolder}/tempbuild/bin/Mail.exe",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "args": [],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}/tempbuild/bin",
+            "environment": [
+                {
+                    "name": "PATH",
+                    "value": "${env:PATH};C:/Program Files/MySQL/MySQL Server 8.0/lib;"
+                }
+            ],
+            "console": "externalTerminal",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set charset to UTF-8",
+                    "text": "set charset UTF-8",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "将反汇编风格设置为 Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "cmake-build"
+        },
+        {
+            "name": "Debug md5",
+            "program": "${workspaceFolder}/tempbuild/bin/md5.exe",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "args": [],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}/tempbuild/bin",
+            "environment": [
+                {
+                    "name": "PATH",
+                    "value": "${env:PATH};C:/Program Files/MySQL/MySQL Server 8.0/lib;"
+                }
+            ],
+            "console": "externalTerminal",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set charset to UTF-8",
+                    "text": "set charset UTF-8",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "将反汇编风格设置为 Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "cmake-build"
+        },
+        {
+            "name": "Debug MetricsSample",
+            "program": "${workspaceFolder}/tempbuild/bin/MetricsSample.exe",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "args": [],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}/tempbuild/bin",
+            "environment": [
+                {
+                    "name": "PATH",
+                    "value": "${env:PATH};C:/Program Files/MySQL/MySQL Server 8.0/lib;"
+                }
+            ],
+            "console": "externalTerminal",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set charset to UTF-8",
+                    "text": "set charset UTF-8",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "将反汇编风格设置为 Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "cmake-build"
+        },
+        {
+            "name": "Debug MongoDB-testrunner",
+            "program": "${workspaceFolder}/tempbuild/bin/MongoDB-testrunner.exe",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "args": [],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}/tempbuild/bin",
+            "environment": [
+                {
+                    "name": "PATH",
+                    "value": "${env:PATH};C:/Program Files/MySQL/MySQL Server 8.0/lib;"
+                }
+            ],
+            "console": "externalTerminal",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set charset to UTF-8",
+                    "text": "set charset UTF-8",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "将反汇编风格设置为 Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "cmake-build"
+        },
+        {
+            "name": "Debug Net-testrunner",
+            "program": "${workspaceFolder}/tempbuild/bin/Net-testrunner.exe",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "args": [],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}/tempbuild/bin",
+            "environment": [
+                {
+                    "name": "PATH",
+                    "value": "${env:PATH};C:/Program Files/MySQL/MySQL Server 8.0/lib;"
+                }
+            ],
+            "console": "externalTerminal",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set charset to UTF-8",
+                    "text": "set charset UTF-8",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "将反汇编风格设置为 Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "cmake-build"
+        },
+        {
+            "name": "Debug NetSSL-client",
+            "program": "${workspaceFolder}/tempbuild/bin/NetSSL-client.exe",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "args": [],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}/tempbuild/bin",
+            "environment": [
+                {
+                    "name": "PATH",
+                    "value": "${env:PATH};C:/Program Files/MySQL/MySQL Server 8.0/lib;"
+                }
+            ],
+            "console": "externalTerminal",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set charset to UTF-8",
+                    "text": "set charset UTF-8",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "将反汇编风格设置为 Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "cmake-build"
+        },
+        {
+            "name": "Debug NetSSL-server",
+            "program": "${workspaceFolder}/tempbuild/bin/NetSSL-server.exe",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "args": [],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}/tempbuild/bin",
+            "environment": [
+                {
+                    "name": "PATH",
+                    "value": "${env:PATH};C:/Program Files/MySQL/MySQL Server 8.0/lib;"
+                }
+            ],
+            "console": "externalTerminal",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set charset to UTF-8",
+                    "text": "set charset UTF-8",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "将反汇编风格设置为 Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "cmake-build"
+        },
+        {
+            "name": "Debug NetSSL-testrunner",
+            "program": "${workspaceFolder}/tempbuild/bin/NetSSL-testrunner.exe",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "args": [],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}/tempbuild/bin",
+            "environment": [
+                {
+                    "name": "PATH",
+                    "value": "${env:PATH};C:/Program Files/MySQL/MySQL Server 8.0/lib;"
+                }
+            ],
+            "console": "externalTerminal",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set charset to UTF-8",
+                    "text": "set charset UTF-8",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "将反汇编风格设置为 Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "cmake-build"
+        },
+        {
+            "name": "Debug NotificationQueue",
+            "program": "${workspaceFolder}/tempbuild/bin/NotificationQueue.exe",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "args": [],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}/tempbuild/bin",
+            "environment": [
+                {
+                    "name": "PATH",
+                    "value": "${env:PATH};C:/Program Files/MySQL/MySQL Server 8.0/lib;"
+                }
+            ],
+            "console": "externalTerminal",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set charset to UTF-8",
+                    "text": "set charset UTF-8",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "将反汇编风格设置为 Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "cmake-build"
+        },
+        {
+            "name": "Debug Ping",
+            "program": "${workspaceFolder}/tempbuild/bin/Ping.exe",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "args": [],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}/tempbuild/bin",
+            "environment": [
+                {
+                    "name": "PATH",
+                    "value": "${env:PATH};C:/Program Files/MySQL/MySQL Server 8.0/lib;"
+                }
+            ],
+            "console": "externalTerminal",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set charset to UTF-8",
+                    "text": "set charset UTF-8",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "将反汇编风格设置为 Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "cmake-build"
+        },
+        {
+            "name": "Debug pkill",
+            "program": "${workspaceFolder}/tempbuild/bin/pkill.exe",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "args": [],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}/tempbuild/bin",
+            "environment": [
+                {
+                    "name": "PATH",
+                    "value": "${env:PATH};C:/Program Files/MySQL/MySQL Server 8.0/lib;"
+                }
+            ],
+            "console": "externalTerminal",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set charset to UTF-8",
+                    "text": "set charset UTF-8",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "将反汇编风格设置为 Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "cmake-build"
+        },
+        {
+            "name": "Debug poco-arc",
+            "program": "${workspaceFolder}/tempbuild/bin/poco-arc.exe",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "args": [],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}/tempbuild/bin",
+            "environment": [
+                {
+                    "name": "PATH",
+                    "value": "${env:PATH};C:/Program Files/MySQL/MySQL Server 8.0/lib;"
+                }
+            ],
+            "console": "externalTerminal",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set charset to UTF-8",
+                    "text": "set charset UTF-8",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "将反汇编风格设置为 Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "cmake-build"
+        },
+        {
+            "name": "Debug PrettyPrint",
+            "program": "${workspaceFolder}/tempbuild/bin/PrettyPrint.exe",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "args": [],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}/tempbuild/bin",
+            "environment": [
+                {
+                    "name": "PATH",
+                    "value": "${env:PATH};C:/Program Files/MySQL/MySQL Server 8.0/lib;"
+                }
+            ],
+            "console": "externalTerminal",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set charset to UTF-8",
+                    "text": "set charset UTF-8",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "将反汇编风格设置为 Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "cmake-build"
+        },
+        {
+            "name": "Debug Prometheus-testrunner",
+            "program": "${workspaceFolder}/tempbuild/bin/Prometheus-testrunner.exe",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "args": [],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}/tempbuild/bin",
+            "environment": [
+                {
+                    "name": "PATH",
+                    "value": "${env:PATH};C:/Program Files/MySQL/MySQL Server 8.0/lib;"
+                }
+            ],
+            "console": "externalTerminal",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set charset to UTF-8",
+                    "text": "set charset UTF-8",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "将反汇编风格设置为 Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "cmake-build"
+        },
+        {
+            "name": "Debug RecordSet",
+            "program": "${workspaceFolder}/tempbuild/bin/RecordSet.exe",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "args": [],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}/tempbuild/bin",
+            "environment": [
+                {
+                    "name": "PATH",
+                    "value": "${env:PATH};C:/Program Files/MySQL/MySQL Server 8.0/lib;"
+                }
+            ],
+            "console": "externalTerminal",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set charset to UTF-8",
+                    "text": "set charset UTF-8",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "将反汇编风格设置为 Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "cmake-build"
+        },
+        {
+            "name": "Debug Redis-testrunner",
+            "program": "${workspaceFolder}/tempbuild/bin/Redis-testrunner.exe",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "args": [],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}/tempbuild/bin",
+            "environment": [
+                {
+                    "name": "PATH",
+                    "value": "${env:PATH};C:/Program Files/MySQL/MySQL Server 8.0/lib;"
+                }
+            ],
+            "console": "externalTerminal",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set charset to UTF-8",
+                    "text": "set charset UTF-8",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "将反汇编风格设置为 Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "cmake-build"
+        },
+        {
+            "name": "Debug RowFormatter",
+            "program": "${workspaceFolder}/tempbuild/bin/RowFormatter.exe",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "args": [],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}/tempbuild/bin",
+            "environment": [
+                {
+                    "name": "PATH",
+                    "value": "${env:PATH};C:/Program Files/MySQL/MySQL Server 8.0/lib;"
+                }
+            ],
+            "console": "externalTerminal",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set charset to UTF-8",
+                    "text": "set charset UTF-8",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "将反汇编风格设置为 Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "cmake-build"
+        },
+        {
+            "name": "Debug sample-trace",
+            "program": "${workspaceFolder}/tempbuild/bin/sample-trace.exe",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "args": [],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}/tempbuild/bin",
+            "environment": [
+                {
+                    "name": "PATH",
+                    "value": "${env:PATH};C:/Program Files/MySQL/MySQL Server 8.0/lib;"
+                }
+            ],
+            "console": "externalTerminal",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set charset to UTF-8",
+                    "text": "set charset UTF-8",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "将反汇编风格设置为 Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "cmake-build"
+        },
+        {
+            "name": "Debug sample-unzip",
+            "program": "${workspaceFolder}/tempbuild/bin/sample-unzip.exe",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "args": [],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}/tempbuild/bin",
+            "environment": [
+                {
+                    "name": "PATH",
+                    "value": "${env:PATH};C:/Program Files/MySQL/MySQL Server 8.0/lib;"
+                }
+            ],
+            "console": "externalTerminal",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set charset to UTF-8",
+                    "text": "set charset UTF-8",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "将反汇编风格设置为 Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "cmake-build"
+        },
+        {
+            "name": "Debug sample-zip",
+            "program": "${workspaceFolder}/tempbuild/bin/sample-zip.exe",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "args": [],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}/tempbuild/bin",
+            "environment": [
+                {
+                    "name": "PATH",
+                    "value": "${env:PATH};C:/Program Files/MySQL/MySQL Server 8.0/lib;"
+                }
+            ],
+            "console": "externalTerminal",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set charset to UTF-8",
+                    "text": "set charset UTF-8",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "将反汇编风格设置为 Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "cmake-build"
+        },
+        {
+            "name": "Debug SampleApp",
+            "program": "${workspaceFolder}/tempbuild/bin/SampleApp.exe",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "args": [],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}/tempbuild/bin",
+            "environment": [
+                {
+                    "name": "PATH",
+                    "value": "${env:PATH};C:/Program Files/MySQL/MySQL Server 8.0/lib;"
+                }
+            ],
+            "console": "externalTerminal",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set charset to UTF-8",
+                    "text": "set charset UTF-8",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "将反汇编风格设置为 Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "cmake-build"
+        },
+        {
+            "name": "Debug SampleServer",
+            "program": "${workspaceFolder}/tempbuild/bin/SampleServer.exe",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "args": [],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}/tempbuild/bin",
+            "environment": [
+                {
+                    "name": "PATH",
+                    "value": "${env:PATH};C:/Program Files/MySQL/MySQL Server 8.0/lib;"
+                }
+            ],
+            "console": "externalTerminal",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set charset to UTF-8",
+                    "text": "set charset UTF-8",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "将反汇编风格设置为 Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "cmake-build"
+        },
+        {
+            "name": "Debug SAXParser",
+            "program": "${workspaceFolder}/tempbuild/bin/SAXParser.exe",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "args": [],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}/tempbuild/bin",
+            "environment": [
+                {
+                    "name": "PATH",
+                    "value": "${env:PATH};C:/Program Files/MySQL/MySQL Server 8.0/lib;"
+                }
+            ],
+            "console": "externalTerminal",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set charset to UTF-8",
+                    "text": "set charset UTF-8",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "将反汇编风格设置为 Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "cmake-build"
+        },
+        {
+            "name": "Debug SMTPLogger",
+            "program": "${workspaceFolder}/tempbuild/bin/SMTPLogger.exe",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "args": [],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}/tempbuild/bin",
+            "environment": [
+                {
+                    "name": "PATH",
+                    "value": "${env:PATH};C:/Program Files/MySQL/MySQL Server 8.0/lib;"
+                }
+            ],
+            "console": "externalTerminal",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set charset to UTF-8",
+                    "text": "set charset UTF-8",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "将反汇编风格设置为 Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "cmake-build"
+        },
+        {
+            "name": "Debug SQLToMongo",
+            "program": "${workspaceFolder}/tempbuild/bin/SQLToMongo.exe",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "args": [],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}/tempbuild/bin",
+            "environment": [
+                {
+                    "name": "PATH",
+                    "value": "${env:PATH};C:/Program Files/MySQL/MySQL Server 8.0/lib;"
+                }
+            ],
+            "console": "externalTerminal",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set charset to UTF-8",
+                    "text": "set charset UTF-8",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "将反汇编风格设置为 Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "cmake-build"
+        },
+        {
+            "name": "Debug StringTokenizer",
+            "program": "${workspaceFolder}/tempbuild/bin/StringTokenizer.exe",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "args": [],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}/tempbuild/bin",
+            "environment": [
+                {
+                    "name": "PATH",
+                    "value": "${env:PATH};C:/Program Files/MySQL/MySQL Server 8.0/lib;"
+                }
+            ],
+            "console": "externalTerminal",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set charset to UTF-8",
+                    "text": "set charset UTF-8",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "将反汇编风格设置为 Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "cmake-build"
+        },
+        {
+            "name": "Debug tcpserver",
+            "program": "${workspaceFolder}/tempbuild/bin/tcpserver.exe",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "args": [],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}/tempbuild/bin",
+            "environment": [
+                {
+                    "name": "PATH",
+                    "value": "${env:PATH};C:/Program Files/MySQL/MySQL Server 8.0/lib;"
+                }
+            ],
+            "console": "externalTerminal",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set charset to UTF-8",
+                    "text": "set charset UTF-8",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "将反汇编风格设置为 Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "cmake-build"
+        },
+        {
+            "name": "Debug TestApp",
+            "program": "${workspaceFolder}/tempbuild/bin/TestApp.exe",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "args": [],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}/tempbuild/bin",
+            "environment": [
+                {
+                    "name": "PATH",
+                    "value": "${env:PATH};C:/Program Files/MySQL/MySQL Server 8.0/lib;"
+                }
+            ],
+            "console": "externalTerminal",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set charset to UTF-8",
+                    "text": "set charset UTF-8",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "将反汇编风格设置为 Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "cmake-build"
+        },
+        {
+            "name": "Debug TextConverter",
+            "program": "${workspaceFolder}/tempbuild/bin/TextConverter.exe",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "args": [],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}/tempbuild/bin",
+            "environment": [
+                {
+                    "name": "PATH",
+                    "value": "${env:PATH};C:/Program Files/MySQL/MySQL Server 8.0/lib;"
+                }
+            ],
+            "console": "externalTerminal",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set charset to UTF-8",
+                    "text": "set charset UTF-8",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "将反汇编风格设置为 Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "cmake-build"
+        },
+        {
+            "name": "Debug Timer",
+            "program": "${workspaceFolder}/tempbuild/bin/Timer.exe",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "args": [],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}/tempbuild/bin",
+            "environment": [
+                {
+                    "name": "PATH",
+                    "value": "${env:PATH};C:/Program Files/MySQL/MySQL Server 8.0/lib;"
+                }
+            ],
+            "console": "externalTerminal",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set charset to UTF-8",
+                    "text": "set charset UTF-8",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "将反汇编风格设置为 Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "cmake-build"
+        },
+        {
+            "name": "Debug TimeServer",
+            "program": "${workspaceFolder}/tempbuild/bin/TimeServer.exe",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "args": [],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}/tempbuild/bin",
+            "environment": [
+                {
+                    "name": "PATH",
+                    "value": "${env:PATH};C:/Program Files/MySQL/MySQL Server 8.0/lib;"
+                }
+            ],
+            "console": "externalTerminal",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set charset to UTF-8",
+                    "text": "set charset UTF-8",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "将反汇编风格设置为 Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "cmake-build"
+        },
+        {
+            "name": "Debug Tuple",
+            "program": "${workspaceFolder}/tempbuild/bin/Tuple.exe",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "args": [],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}/tempbuild/bin",
+            "environment": [
+                {
+                    "name": "PATH",
+                    "value": "${env:PATH};C:/Program Files/MySQL/MySQL Server 8.0/lib;"
+                }
+            ],
+            "console": "externalTerminal",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set charset to UTF-8",
+                    "text": "set charset UTF-8",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "将反汇编风格设置为 Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "cmake-build"
+        },
+        {
+            "name": "Debug TwitterClient",
+            "program": "${workspaceFolder}/tempbuild/bin/TwitterClient.exe",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "args": [],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}/tempbuild/bin",
+            "environment": [
+                {
+                    "name": "PATH",
+                    "value": "${env:PATH};C:/Program Files/MySQL/MySQL Server 8.0/lib;"
+                }
+            ],
+            "console": "externalTerminal",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set charset to UTF-8",
+                    "text": "set charset UTF-8",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "将反汇编风格设置为 Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "cmake-build"
+        },
+        {
+            "name": "Debug TypeHandler",
+            "program": "${workspaceFolder}/tempbuild/bin/TypeHandler.exe",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "args": [],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}/tempbuild/bin",
+            "environment": [
+                {
+                    "name": "PATH",
+                    "value": "${env:PATH};C:/Program Files/MySQL/MySQL Server 8.0/lib;"
+                }
+            ],
+            "console": "externalTerminal",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set charset to UTF-8",
+                    "text": "set charset UTF-8",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "将反汇编风格设置为 Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "cmake-build"
+        },
+        {
+            "name": "Debug Units",
+            "program": "${workspaceFolder}/tempbuild/bin/Units.exe",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "args": [],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}/tempbuild/bin",
+            "environment": [
+                {
+                    "name": "PATH",
+                    "value": "${env:PATH};C:/Program Files/MySQL/MySQL Server 8.0/lib;"
+                }
+            ],
+            "console": "externalTerminal",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set charset to UTF-8",
+                    "text": "set charset UTF-8",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "将反汇编风格设置为 Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "cmake-build"
+        },
+        {
+            "name": "Debug URI",
+            "program": "${workspaceFolder}/tempbuild/bin/URI.exe",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "args": [],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}/tempbuild/bin",
+            "environment": [
+                {
+                    "name": "PATH",
+                    "value": "${env:PATH};C:/Program Files/MySQL/MySQL Server 8.0/lib;"
+                }
+            ],
+            "console": "externalTerminal",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set charset to UTF-8",
+                    "text": "set charset UTF-8",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "将反汇编风格设置为 Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "cmake-build"
+        },
+        {
+            "name": "Debug Util-testrunner",
+            "program": "${workspaceFolder}/tempbuild/bin/Util-testrunner.exe",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "args": [],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}/tempbuild/bin",
+            "environment": [
+                {
+                    "name": "PATH",
+                    "value": "${env:PATH};C:/Program Files/MySQL/MySQL Server 8.0/lib;"
+                }
+            ],
+            "console": "externalTerminal",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set charset to UTF-8",
+                    "text": "set charset UTF-8",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "将反汇编风格设置为 Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "cmake-build"
+        },
+        {
+            "name": "Debug uuidgen",
+            "program": "${workspaceFolder}/tempbuild/bin/uuidgen.exe",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "args": [],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}/tempbuild/bin",
+            "environment": [
+                {
+                    "name": "PATH",
+                    "value": "${env:PATH};C:/Program Files/MySQL/MySQL Server 8.0/lib;"
+                }
+            ],
+            "console": "externalTerminal",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set charset to UTF-8",
+                    "text": "set charset UTF-8",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "将反汇编风格设置为 Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "cmake-build"
+        },
+        {
+            "name": "Debug WebNotifier",
+            "program": "${workspaceFolder}/tempbuild/bin/WebNotifier.exe",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "args": [],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}/tempbuild/bin",
+            "environment": [
+                {
+                    "name": "PATH",
+                    "value": "${env:PATH};C:/Program Files/MySQL/MySQL Server 8.0/lib;"
+                }
+            ],
+            "console": "externalTerminal",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set charset to UTF-8",
+                    "text": "set charset UTF-8",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "将反汇编风格设置为 Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "cmake-build"
+        },
+        {
+            "name": "Debug WebSocketServer",
+            "program": "${workspaceFolder}/tempbuild/bin/WebSocketServer.exe",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "args": [],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}/tempbuild/bin",
+            "environment": [
+                {
+                    "name": "PATH",
+                    "value": "${env:PATH};C:/Program Files/MySQL/MySQL Server 8.0/lib;"
+                }
+            ],
+            "console": "externalTerminal",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set charset to UTF-8",
+                    "text": "set charset UTF-8",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "将反汇编风格设置为 Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "cmake-build"
+        },
+        {
+            "name": "Debug XML-testrunner",
+            "program": "${workspaceFolder}/tempbuild/bin/XML-testrunner.exe",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "args": [],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}/tempbuild/bin",
+            "environment": [
+                {
+                    "name": "PATH",
+                    "value": "${env:PATH};C:/Program Files/MySQL/MySQL Server 8.0/lib;"
+                }
+            ],
+            "console": "externalTerminal",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set charset to UTF-8",
+                    "text": "set charset UTF-8",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "将反汇编风格设置为 Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "cmake-build"
+        },
+        {
+            "name": "Debug Zip-testrunner",
+            "program": "${workspaceFolder}/tempbuild/bin/Zip-testrunner.exe",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "args": [],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}/tempbuild/bin",
+            "environment": [
+                {
+                    "name": "PATH",
+                    "value": "${env:PATH};C:/Program Files/MySQL/MySQL Server 8.0/lib;"
+                }
+            ],
+            "console": "externalTerminal",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set charset to UTF-8",
+                    "text": "set charset UTF-8",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "将反汇编风格设置为 Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "cmake-build"
+        }
+    ]
 }

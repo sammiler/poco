@@ -24,7 +24,7 @@ const baseConfig = {
 };
 
 // 从 .vscode 退一级到根目录，再进入 build
-const buildDir = path.join(__dirname, '../tempbuild/bin'); // 修正为退一级
+const buildDir = path.join(__dirname, '../../tempbuild/bin'); // 修正为退一级
 console.log(`Reading build directory: ${buildDir}`);
 const executables = fs.readdirSync(buildDir).filter(f => f.endsWith('.exe'));
 console.log(`Found executables: ${executables}`);
@@ -33,7 +33,7 @@ const configurations = executables.map(exe => ({
     program: `\${workspaceFolder}/tempbuild/bin/${exe}`,
     ...baseConfig
 }));
-const vscodeDir = path.join(__dirname, '..');
+const vscodeDir = path.join(__dirname, '../..');
 const launchJsonPath = path.join(vscodeDir, '/.vscode/launch.json');
 fs.mkdirSync(vscodeDir, { recursive: true });
 fs.writeFileSync(launchJsonPath, JSON.stringify({ version: "0.2.0", configurations }, null, 4));
